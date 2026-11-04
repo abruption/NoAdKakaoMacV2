@@ -6,7 +6,7 @@
 
 ## 다운로드와 호환성
 
-[Releases](https://github.com/abruption/NoAdKakaoMacV2/releases)에서 **0.1.1 유니버설 DMG**와 `SHA256SUMS`를 받으세요. Apple Silicon과 Intel용 실행 파일이 함께 들어 있어 기종별로 고를 필요가 없습니다.
+[최신 릴리즈](https://github.com/abruption/NoAdKakaoMacV2/releases/latest)에서 **유니버설 DMG**와 `SHA256SUMS`를 받으세요. Apple Silicon과 Intel용 실행 파일이 함께 들어 있어 기종별로 고를 필요가 없습니다.
 
 - 배포 파일: `NoAdKakaoMacV2-0.1.1-universal.dmg`
 - 기본 실행·자동 시험 확인: Apple Silicon(macOS 26), Intel(macOS 15)
