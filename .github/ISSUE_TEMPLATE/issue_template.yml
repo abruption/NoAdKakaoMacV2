@@ -1,0 +1,89 @@
+name: 문제 신고
+description: NoAdKakaoMac V2 사용 중 발생한 문제를 알려 주세요.
+title: "fix(report): "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **연결 복구 필요**가 표시되면 앱 메뉴에서 **연결 복구**를 먼저 눌러 주세요.
+        문제가 계속되면 아래 내용을 작성해 주세요.
+
+        이슈와 첨부 파일은 공개됩니다. 로그인 정보·대화·통신 원문·원시 로그·인증서·키·
+        복구 기록은 올리지 마세요. 화면 캡처의 개인정보도 가려 주세요.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 어떤 문제가 발생했나요?
+      placeholder: "예: 연결 해제를 눌렀지만 연결 복구 필요가 계속 표시돼요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 문제가 발생한 순서
+      description: 누른 메뉴와 버튼을 순서대로 적어 주세요.
+      placeholder: |
+        1. … 메뉴를 선택했어요.
+        2. … 버튼을 눌렀어요.
+        3. … 문제가 발생했어요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작
+      description: 어떻게 동작해야 했는지 알려 주세요.
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 앱 버전
+      description: 릴리즈 안내나 문제 신고용 파일에서 확인할 수 있어요.
+      placeholder: "예: 0.1.1 / 빌드 8"
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS 버전
+      description: 시스템 설정 → 일반 → 정보에서 버전만 적어 주세요.
+      placeholder: "예: macOS 15"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Mac 종류
+      description: 종류를 모르면 ‘모르겠어요’를 선택해 주세요.
+      options:
+        - Apple Silicon
+        - Intel
+        - 모르겠어요
+      default: 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: report
+    attributes:
+      label: 문제 신고용 JSON 파일 (선택)
+      description: |
+        ‘문제 신고용 파일 저장…’으로 만든 파일을 확인한 뒤 첨부해 주세요.
+        첨부가 안 되면 내용을 이곳에 붙여 넣어 주세요. 파일은 앱에서 자동 전송되지 않습니다.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 공개 전 확인
+      options:
+        - label: 본문·화면·첨부 파일에 개인정보, 로그인 정보, 대화·통신 원문, 인증서·키가 없는지 확인했어요.
+          required: true

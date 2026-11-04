@@ -1,0 +1,15 @@
+# 공개 저장소에는 승인된 배포 문서와 이슈 양식만 포함합니다.
+# DMG·체크섬은 Git 파일 대신 GitHub Releases 첨부 파일로 관리합니다.
+/*
+!/.gitignore
+!/README.md
+!/CHANGELOG.md
+!/LICENSE
+!/NOTICE
+!/.github/
+/.github/*
+!/.github/pull_request_template.md
+!/.github/ISSUE_TEMPLATE/
+/.github/ISSUE_TEMPLATE/*
+!/.github/ISSUE_TEMPLATE/issue_template.yml
+!/.github/ISSUE_TEMPLATE/config.yml
