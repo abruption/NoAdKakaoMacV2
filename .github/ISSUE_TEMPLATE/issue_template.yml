@@ -44,7 +44,7 @@ body:
     attributes:
       label: 앱 버전
       description: 릴리즈 안내나 문제 신고용 파일에서 확인할 수 있어요.
-      placeholder: "예: 0.1.1 / 빌드 8"
+      placeholder: "예: 0.1.2 / 빌드 9"
     validations:
       required: true
 
